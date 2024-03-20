@@ -13,9 +13,18 @@ var categorySlide = new Swiper('.categorySlide', {
 });
 
 let instaSlide = new Swiper('.instaSlide', {
-  slidesPerView: 3,
+  effect: 'coverflow',
+  grabCursor: true,
   centeredSlides: true,
+  //slidesPerView: auto,
+  slidesPerView: 3,
   spaceBetween: 30,
   loop: true,
-  //effect: 'fade',
+  coverflowEffect: {
+    rotate: 0,
+    stretch: 0,
+    depth: 500,
+    modifier: 1,
+    slideShadows: true,
+  },
 });
