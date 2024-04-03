@@ -350,7 +350,6 @@ h2 {
 
 /* latestBlog */
 .latestBlog {
-  border: 1px solid red;
   padding-top: 100px;
 }
 
@@ -363,12 +362,10 @@ h2 {
 }
 
 .blog {
-  border: 1px solid red;
   width: calc(65% - 2rem);
 }
 
 .blog .card>li {
-  border: 1px solid red;
   padding: 1rem 1rem 1rem 0;
   border-radius: 1rem;
   display: flex;
@@ -392,6 +389,7 @@ h2 {
 
 .blog .desc>* {
   padding-bottom: 1rem;
+  font-weight: 300;
 }
 
 .blog .desc h3 {
@@ -399,35 +397,139 @@ h2 {
   font-weight: 600;
 }
 
-.blog .desc span:nth-of-type(1) {}
+.blog .desc span {
+  color: var(--yel);
+}
 
-.blog .desc strong {}
+.blog .desc span:nth-of-type(1) {
+  text-decoration: underline;
+}
 
-.blog .desc time {}
+.blog .desc strong {
+  font-weight: 600;
+}
 
-.blog .desc p {}
+.blog .desc a {
+  color: var(--yel);
+}
 
-.blog .desc a {}
+.blog .pg2 {
+  text-align: center;
+  font-size: 1.5rem;
+  padding-top: 2rem;
+}
 
+.blog .pg2 a {
+  padding: 0 1.5rem 0 1.5rem;
+  font-weight: 800;
+}
+
+.blog .pg2 a:first-of-type {
+  color: var(--yel);
+
+}
 
 .aside {
-  border: 1px solid red;
   width: 30%;
 }
 
+.aside>* {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  margin: 1rem 0 1rem 0;
+  border-radius: 10px;
+  padding: 2rem 2rem 1rem 1.5rem;
+}
 
+.aside h3 {
+  font-size: 1.25rem;
+  font-weight: 800;
+  margin-bottom: 2rem;
+}
+
+.post li>* {
+  font-size: 6px;
+}
+
+.post li {
+  display: flex;
+}
+
+.post li div {
+  padding: 1rem 1rem 0.5rem 0;
+  order: 2;
+}
+
+.post div strong {
+  font-weight: 500;
+}
+
+.post div span {
+  color: var(--yel);
+}
+
+.post h4 {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.follwMe .outside a {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.today {
+  background-color: var(--yel);
+  color: white;
+}
+
+.today h3 {
+  font-weight: 400;
+}
+
+.today p {
+  line-height: 2rem;
+  padding-bottom: 1rem;
+}
+
+.today input:nth-of-type(1),
+.today input:nth-of-type(2) {
+  width: 90%;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+  outline: none;
+  border: none;
+}
+
+.today button {
+  width: 100%;
+  padding: 1rem;
+  background-color: white;
+  color: var(--yel);
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+
+.tags a {
+  color: var(--yel);
+  text-decoration: underline;
+  padding-right: 0.5rem;
+}
 
 
 
 /* bestPlaces */
-.bestPlaces {
-  display: none;
+.bestPlaces h2 {
+  padding: 100px 0 50px 0;
+}
+
+.bestPlaces iframe {
+  width: 100%;
+  height: 650px;
 }
 
 /* watchVideo */
-.watchVideo {
-  display: none;
-}
+.watchVideo {}
 
 /* insta */
 .insta {
