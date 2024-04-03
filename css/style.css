@@ -354,11 +354,13 @@ h2 {
 }
 
 .latestBlog h2 {
+  width: 100%;
   padding-bottom: 2rem;
 }
 
-.latestBlog>.mw {
+.latestBlog {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .blog {
@@ -384,12 +386,16 @@ h2 {
   order: 2;
   padding-top: 0.5rem;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .blog .desc>* {
-  padding-bottom: 1rem;
   font-weight: 300;
+}
+
+.blog .desc div>p {
+  padding-bottom: 1rem;
 }
 
 .blog .desc h3 {
@@ -403,6 +409,15 @@ h2 {
 
 .blog .desc span:nth-of-type(1) {
   text-decoration: underline;
+}
+
+.blog .desc p {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  max-height: 3em;
 }
 
 .blog .desc strong {
@@ -617,7 +632,22 @@ h2 {
 
 
 /* insta */
-.insta {}
+.insta {
+  padding-top: 100px;
+}
+
+.insta>* {
+  padding-bottom: 2rem;
+}
+
+.insta>p {
+  text-align: center;
+  color: var(--yel);
+  font-weight: 500;
+  font-size: 1.5;
+}
+
+.insta img {}
 
 /* footer */
 footer {
@@ -743,6 +773,18 @@ footer .outside a:hover {
 
   .mainVisual {
     padding: 0 1rem 0 1rem;
+  }
+
+  .latestBlog .blog {
+    width: 100%;
+  }
+
+  .latestBlog .aside {
+    display: none;
+  }
+
+  .watchVideo p {
+    padding: 0 5rem 0 5rem;
   }
 }
 
