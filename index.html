@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gallivant</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/my_reset.css" />
     <link
       rel="stylesheet"
@@ -23,21 +29,21 @@
   </head>
   <body>
     <div class="wrap">
-      <header class="hd">
-        <nav class="inner mw">
-          <h1>
-            <a href="#"><img src="./img/logo.svg" alt="로고" /></a>
-          </h1>
-          <div class="search">
-            <i class="fa-solid fa-magnifying-glass"></i
-            ><input type="text" placeholder="Search your option" />
-          </div>
-          <div class="outside">
-            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="#"><i class="fa-brands fa-twitter"></i></a>
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#"><i class="fa-brands fa-youtube"></i></a>
-          </div>
+      <header class="hd mw">
+        <h1>
+          <a href="#"><img src="./img/logo.svg" alt="로고" /></a>
+        </h1>
+        <div class="search">
+          <i class="fa-solid fa-magnifying-glass"></i
+          ><input type="text" placeholder="Search your option" />
+        </div>
+        <div class="outside">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        <nav>
           <ul class="gnb">
             <li>
               <a href="#">Home <i class="fa-solid fa-angle-down"></i></a>
@@ -80,11 +86,14 @@
               </ul>
             </li>
           </ul>
+          <div class="ham">
+            <a href="#"><i class="fa-solid fa-bars"></i></a>
+          </div>
         </nav>
       </header>
 
       <section class="mainVisual">
-        <div class="inner">
+        <div>
           <h2>Where will you go next?</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sed
@@ -98,48 +107,51 @@
       </section>
 
       <section class="category">
-        <div class="inner">
-          <h2>Choose a category</h2>
+        <div class="mw">
+          <h2>Choose a Category</h2>
           <div class="swiper categorySlide">
             <ul class="swiper-wrapper">
               <li class="swiper-slide">
-                <a href="#" title="자세히보기">
-                  <img src="./img/categoryJungal.svg" alt="카테고리1" />
-                  <span>Jungal Travel</span>
-                </a>
+                <img src="./img/categoryJungal.svg" alt="카테고리1" />
+                <span>Jungal Travel</span>
+                <a href="#" title="자세히보기"> </a>
               </li>
               <li class="swiper-slide">
-                <a href="#" title="자세히보기">
-                  <img src="./img/categoryMount.svg" alt="카테고리2" />
-                  <span>Mount Travel</span>
-                </a>
+                <img src="./img/categoryMount.svg" alt="카테고리2" />
+                <span>Mount Travel</span><a href="#" title="자세히보기"> </a>
               </li>
               <li class="swiper-slide">
-                <a href="#" title="자세히보기">
-                  <img src="./img/categoryOldCity.svg" alt="카테고리3" />
-                  <span>Old City Travel</span>
-                </a>
+                <img src="./img/categoryOldCity.svg" alt="카테고리3" />
+                <span>Old City Travel</span><a href="#" title="자세히보기"> </a>
               </li>
               <li class="swiper-slide">
-                <a href="#" title="자세히보기">
-                  <img src="./img/categoryOsean.svg" alt="카테고리4" />
-                  <span>Osean Travel</span>
-                </a>
+                <img src="./img/categoryOsean.svg" alt="카테고리4" />
+                <span>Osean Travel</span> <a href="#" title="자세히보기"> </a>
               </li>
               <li class="swiper-slide">
-                <a href="#" title="자세히보기">
-                  <img src="./img/categoryRoad.svg" alt="카테고리5" />
-                  <span>Road Travel</span>
-                </a>
+                <img src="./img/categoryRoad.svg" alt="카테고리5" />
+                <span>Road Travel</span> <a href="#" title="자세히보기"> </a>
               </li>
               <li class="swiper-slide">
-                <a href="#" title="자세히보기">
-                  <img src="./img/categorySolo.svg" alt="카테고리6" />
-                  <span>Solo Travel</span>
-                </a>
+                <img src="./img/categorySolo.svg" alt="카테고리6" />
+                <span>Solo Travel</span><a href="#" title="자세히보기"> </a>
+              </li>
+              <li class="swiper-slide">
+                <img src="./img/categoryJungal.svg" alt="카테고리1" />
+                <span>Jungal Travel</span> <a href="#" title="자세히보기"> </a>
+              </li>
+              <li class="swiper-slide">
+                <img src="./img/categoryMount.svg" alt="카테고리2" />
+                <span>Mount Travel</span> <a href="#" title="자세히보기"> </a>
+              </li>
+              <li class="swiper-slide">
+                <img src="./img/categoryOldCity.svg" alt="카테고리3" />
+                <span>Old City Travel</span>
+                <a href="#" title="자세히보기"> </a>
               </li>
             </ul>
           </div>
+
           <div class="swiper-pagination pg1"></div>
           <div class="swiper-button-next next1"></div>
           <div class="swiper-button-prev prev1"></div>
@@ -147,72 +159,84 @@
       </section>
 
       <section class="explore">
-        <div class="inner">
-          <h2>Featured explore</h2>
+        <div class="mw">
+          <h2>Featured Explore</h2>
           <ul class="card">
             <li>
-              <strong>The Golden Sands of Florida and clifornia </strong>
-              <p>
-                Lorem ipsum dolor sit amet, con turadip iscingelit. In sed et
-                donec purus viverra. Sit justo velit, eu sed
-              </p>
-              <span>Solo Travel</span>
-              <strong>By Adam Smith</strong>
+              <div class="info">
+                <strong>The Golden Sands of Florida and clifornia </strong>
+                <p>
+                  Lorem ipsum dolor sit amet, con turadip iscingelit. In sed et
+                  donec purus viverra. Sit justo velit, eu sed
+                </p>
+                <span>Solo Travel</span>
+                <strong>By Adam Smith</strong>
+              </div>
               <img src="./img/explore1.svg" alt="explore1" />
               <a href="#">자세히 보기</a>
             </li>
             <li>
-              <strong>The Golden Sands of Florida and clifornia </strong>
-              <p>
-                Lorem ipsum dolor sit amet, con turadip iscingelit. In sed et
-                donec purus viverra. Sit justo velit, eu sed
-              </p>
-              <span>Solo Travel</span>
-              <strong>By Adam Smith</strong>
+              <div class="info">
+                <strong>The Golden Sands of Florida and clifornia </strong>
+                <p>
+                  Lorem ipsum dolor sit amet, con turadip iscingelit. In sed et
+                  donec purus viverra. Sit justo velit, eu sed
+                </p>
+                <span>Solo Travel</span>
+                <strong>By Adam Smith</strong>
+              </div>
               <img src="./img/explore2.svg" alt="explore2" />
               <a href="#">자세히 보기</a>
             </li>
             <li>
-              <strong>The Golden Sands of Florida and clifornia </strong>
-              <p>
-                Lorem ipsum dolor sit amet, con turadip iscingelit. In sed et
-                donec purus viverra. Sit justo velit, eu sed
-              </p>
-              <span>Solo Travel</span>
-              <strong>By Adam Smith</strong>
+              <div class="info">
+                <strong>The Golden Sands of Florida and clifornia </strong>
+                <p>
+                  Lorem ipsum dolor sit amet, con turadip iscingelit. In sed et
+                  donec purus viverra. Sit justo velit, eu sed
+                </p>
+                <span>Solo Travel</span>
+                <strong>By Adam Smith</strong>
+              </div>
               <img src="./img/explore3.svg" alt="explore3" />
               <a href="#">자세히 보기</a>
             </li>
             <li>
-              <strong>The Golden Sands of Florida and clifornia </strong>
-              <p>
-                Lorem ipsum dolor sit amet, con turadip iscingelit. In sed et
-                donec purus viverra. Sit justo velit, eu sed
-              </p>
-              <span>Solo Travel</span>
-              <strong>By Adam Smith</strong>
+              <div class="info">
+                <strong>The Golden Sands of Florida and clifornia </strong>
+                <p>
+                  Lorem ipsum dolor sit amet, con turadip iscingelit. In sed et
+                  donec purus viverra. Sit justo velit, eu sed
+                </p>
+                <span>Solo Travel</span>
+                <strong>By Adam Smith</strong>
+              </div>
               <img src="./img/explore4.svg" alt="explore4" />
               <a href="#">자세히 보기</a>
             </li>
             <li>
-              <strong>The Golden Sands of Florida and clifornia </strong>
-              <p>
-                Lorem ipsum dolor sit amet, con turadip iscingelit. In sed et
-                donec purus viverra. Sit justo velit, eu sed
-              </p>
-              <span>Solo Travel</span>
-              <strong>By Adam Smith</strong>
+              <div class="info">
+                <strong>The Golden Sands of Florida and clifornia </strong>
+                <p>
+                  Lorem ipsum dolor sit amet, con turadip iscingelit. In sed et
+                  donec purus viverra. Sit justo velit, eu sed
+                </p>
+                <span>Solo Travel</span>
+                <strong>By Adam Smith</strong>
+              </div>
               <img src="./img/explore5.svg" alt="explore5" />
               <a href="#">자세히 보기</a>
             </li>
             <li>
-              <strong>The Golden Sands of Florida and clifornia </strong>
-              <p>
-                Lorem ipsum dolor sit amet, con turadip iscingelit. In sed et
-                donec purus viverra. Sit justo velit, eu sed
-              </p>
-              <span>Solo Travel</span>
-              <strong>By Adam Smith</strong>
+              <div class="info">
+                <strong>The Golden Sands of Florida and clifornia </strong>
+                <p>
+                  Lorem ipsum dolor sit amet, con turadip iscingelit. In sed et
+                  donec purus viverra. Sit justo velit, eu sed
+                </p>
+                <span>Solo Travel</span>
+                <strong>By Adam Smith</strong>
+              </div>
               <img src="./img/explore6.svg" alt="explore6" />
               <a href="#">자세히 보기</a>
             </li>
@@ -225,81 +249,90 @@
           </div>
         </div>
       </section>
-
-      <section class="latestBlog">
-        <div class="inner">
+ 
+      <section class="latestBlog mw">
           <h2>My latest blog</h2>
           <div class="blog">
             <ul class="card">
               <li>
-                <h3>13 things i’d Tell Any New Travler</h3>
-                <span>Post</span>
-                <strong>By Adam Smith</strong>
-                <time>10 Nov, 2020</time>
-                <span>50 comment</span>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-                  sed et donec purus viverra. Sit justo velit, eu sed
-                  sollicitudin tempus,
-                </p>
-                <div><img src="./img/latest1.svg" alt="latest1" /></div>
-                <a href="#" class="more">READ MORE ......</a>
+                <div class="desc">
+                  <h3>13 Things I’d Tell Any New Travler</h3>
+                  <span>Post</span>
+                  <strong>By Adam Smith</strong>
+                  <time>10 Nov, 2020</time>
+                  <span>50 comment</span>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+                    sed et donec purus viverra. Sit justo velit, eu sed
+                    sollicitudin tempus,
+                  </p>
+                  <a href="#" class="more">READ MORE ......</a>
+                </div>
+                <img src="./img/latest1.svg" alt="latest1" />
               </li>
               <li>
-                <h3>5 things i’d Tell Any New Travler</h3>
-                <span>Post</span>
-                <strong>By Adam Smith</strong>
-                <time>10 Nov, 2020</time>
-                <span>50 comment</span>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-                  sed et donec purus viverra. Sit justo velit, eu sed
-                  sollicitudin tempus,
-                </p>
-                <div><img src="./img/latest2.svg" alt="latest2" /></div>
-                <a href="#" class="more">READ MORE ......</a>
+                <div class="desc">
+                  <h3>5 Things I’d Tell Any New Travler</h3>
+                  <span>Post</span>
+                  <strong>By Adam Smith</strong>
+                  <time>10 Nov, 2020</time>
+                  <span>50 comment</span>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+                    sed et donec purus viverra. Sit justo velit, eu sed
+                    sollicitudin tempus,
+                  </p>
+                  <a href="#" class="more">READ MORE ......</a>
+                </div>
+              <img src="./img/latest2.svg" alt="latest2" />
               </li>
               <li>
-                <h3>15 things i’d Tell Any New Travler</h3>
-                <span>Post</span>
-                <strong>By Adam Smith</strong>
-                <time>10 Nov, 2020</time>
-                <span>50 comment</span>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-                  sed et donec purus viverra. Sit justo velit, eu sed
-                  sollicitudin tempus,
-                </p>
-                <div><img src="./img/latest3.svg" alt="latest3" /></div>
-                <a href="#" class="more">READ MORE ......</a>
+                <div class="desc">
+                  <h3>15 Things I’d Tell Any New Travler</h3>
+                  <span>Post</span>
+                  <strong>By Adam Smith</strong>
+                  <time>10 Nov, 2020</time>
+                  <span>50 comment</span>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+                    sed et donec purus viverra. Sit justo velit, eu sed
+                    sollicitudin tempus,
+                  </p>
+                  <a href="#" class="more">READ MORE ......</a>
+                </div>
+                <img src="./img/latest3.svg" alt="latest3" />
               </li>
               <li>
-                <h3>6 things i’d Tell Any New Travler</h3>
-                <span>Post</span>
-                <strong>By Adam Smith</strong>
-                <time>10 Nov, 2020</time>
-                <span>50 comment</span>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-                  sed et donec purus viverra. Sit justo velit, eu sed
-                  sollicitudin tempus,
-                </p>
-                <div><img src="./img/latest4.svg" alt="latest4" /></div>
-                <a href="#" class="more">READ MORE ......</a>
+                <div class="desc">
+                  <h3>6 Things I’d Tell Any New Travler</h3>
+                  <span>Post</span>
+                  <strong>By Adam Smith</strong>
+                  <time>10 Nov, 2020</time>
+                  <span>50 comment</span>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+                    sed et donec purus viverra. Sit justo velit, eu sed
+                    sollicitudin tempus,
+                  </p>
+                  <a href="#" class="more">READ MORE ......</a>
+                </div>
+                <img src="./img/latest4.svg" alt="latest4" />
               </li>
               <li>
-                <h3>12 things i’d Tell Any New Travler</h3>
-                <span>Post</span>
-                <strong>By Adam Smith</strong>
-                <time>10 Nov, 2020</time>
-                <span>50 comment</span>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-                  sed et donec purus viverra. Sit justo velit, eu sed
-                  sollicitudin tempus,
-                </p>
-                <div><img src="./img/latest5.svg" alt="latest5" /></div>
-                <a href="#" class="more">READ MORE ......</a>
+                <div class="desc">
+                  <h3>12 Things I’d Tell Any New Travler</h3>
+                  <span>Post</span>
+                  <strong>By Adam Smith</strong>
+                  <time>10 Nov, 2020</time>
+                  <span>50 comment</span>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+                    sed et donec purus viverra. Sit justo velit, eu sed
+                    sollicitudin tempus,
+                  </p>
+                  <a href="#" class="more">READ MORE ......</a>
+                </div>
+                <img src="./img/latest5.svg" alt="latest5" />
               </li>
             </ul>
             <div class="pg2">
