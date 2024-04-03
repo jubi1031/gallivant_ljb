@@ -3,6 +3,10 @@ const $gnb = document.querySelector('.gnb');
 const $outside = document.querySelector('.outside');
 const $li = $gnb.querySelectorAll('li');
 const $aLink = $gnb.querySelectorAll('a');
+const btnVideo = document.querySelector('.btnVideo');
+const videoCurrentTime = document.querySelector('.videoCurrentTime');
+const videoDuration = document.querySelector('.videoDuration');
+const video = document.querySelector('.watchVideo > video');
 
 $ham.addEventListener('click', (e) => {
   e.preventDefault();
@@ -37,6 +41,19 @@ $gnb.addEventListener('click', (e) => {
 
   if (closestLI) {
     closestLI.classList.toggle('on');
+  }
+});
+
+btnVideo.addEventListener('click', () => {
+  videoCurrentTime.textContent = `${video.currentTime}`;
+  videoDuration.textContent = `${video.duration}`;
+  if (video.paused) {
+    video.play();
+    video.loop = true;
+    btnVideo.innerHTML = `<i class="fa-solid fa-pause"></i>`;
+  } else {
+    video.pause();
+    btnVideo.innerHTML = '<i class="fa-solid fa-play"></i>';
   }
 });
 
