@@ -641,13 +641,80 @@ h2 {
 }
 
 .insta>p {
-  text-align: center;
   color: var(--yel);
+  font-size: 1.75rem;
   font-weight: 500;
-  font-size: 1.5;
+  text-align: center;
 }
 
-.insta img {}
+
+.instaSlide {
+  width: calc(100% + 100px);
+  left: -50px;
+  padding: 50px 0 100px 0;
+}
+
+
+.instaSlide .card {
+  position: relative;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  box-sizing: border-box;
+  overflow: hidden;
+
+}
+
+.instaSlide .card img {
+  width: 100%;
+  border-radius: 2rem;
+  object-fit: cover;
+}
+
+.instaSlide .info {
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.instaSlide .info>* {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  z-index: 1;
+}
+
+.instaSlide .info span {
+  top: 10%;
+  font-size: 1.25rem;
+}
+
+.instaSlide .info>i {
+  top: 50%;
+  font-size: 2.5rem;
+}
+
+.instaSlide .info time {
+  top: 80%;
+}
+
+.instaSlide .card a {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 2rem;
+  opacity: 0;
+}
+
+.instaSlide .card:hover a,
+.instaSlide .card:hover .info {
+  opacity: 1;
+}
+
+
 
 /* footer */
 footer {
@@ -660,6 +727,7 @@ footer {
   justify-content: space-between;
   font-size: 1.5rem;
 }
+
 
 footer nav a {
   padding: 0 2rem 0 2rem;
