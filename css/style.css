@@ -628,10 +628,15 @@ footer {
   padding-left: 2rem;
   color: white;
   justify-content: space-between;
+  font-size: 1.5rem;
 }
 
 footer nav a {
   padding: 0 2rem 0 2rem;
+}
+
+footer .outside a {
+  font-size: 1rem;
 }
 
 footer .outside a:hover {
