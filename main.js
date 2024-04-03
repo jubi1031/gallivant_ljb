@@ -75,10 +75,13 @@ let instaSlide = new Swiper('.instaSlide', {
   effect: 'coverflow',
   grabCursor: true,
   centeredSlides: true,
-  //slidesPerView: auto,
   slidesPerView: 3,
   spaceBetween: 100,
   loop: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
   coverflowEffect: {
     rotate: 0,
     stretch: 0,
