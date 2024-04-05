@@ -58,8 +58,7 @@ btnVideo.addEventListener('click', () => {
 });
 
 var categorySlide = new Swiper('.categorySlide', {
-  // slidesPerView: 3,
-  slidesPerView: 6,
+  slidesPerView: 3,
   spaceBetween: 30,
   pagination: {
     el: '.pg1',
@@ -69,8 +68,12 @@ var categorySlide = new Swiper('.categorySlide', {
     nextEl: '.next1',
     prevEl: '.prev1',
   },
+  breakpoints: {
+    768: {
+      slidesPerView: 6,
+    },
+  },
 });
-
 let instaSlide = new Swiper('.instaSlide', {
   effect: 'coverflow',
   grabCursor: true,

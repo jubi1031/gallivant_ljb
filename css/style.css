@@ -189,6 +189,8 @@ h2 {
 }
 
 .categorySlide span {
+  width: 100%;
+  text-align: center;
   color: white;
   position: absolute;
   top: 50%;
@@ -257,24 +259,30 @@ h2 {
   background-color: #f0f0f0;
   border-radius: 1rem;
   width: 30%;
-  height: 517px;
+  aspect-ratio: 5 / 6;
   position: relative;
   margin-bottom: 1rem;
+  overflow: hidden;
 }
 
 .explore .card img {
   position: absolute;
   width: 100%;
+  height: auto;
   top: 0;
   left: 0;
   border-radius: 1rem 1rem 0 0;
 
 }
 
-.card .info {
-  padding: 360px 1.5rem 1.5rem 1.5rem;
-
+.explore .card .info {
+  position: absolute;
+  top: 65%;
+  left: 0;
+  right: 0;
+  padding: 1.5rem;
 }
+
 
 .explore .info strong:first-of-type {
   font-size: 1.2rem;
@@ -285,16 +293,31 @@ h2 {
   font-weight: 600;
 }
 
-.explore .info p {
+.explore .info p:first-of-type {
   padding-top: 1rem;
   font-weight: 300;
   padding-bottom: 1rem;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  max-height: 3em;
+
+}
+
+.explore .info p:nth-of-type(2) {
+  padding-top: 10px;
+  display: flex;
 }
 
 .explore .info span {
   color: var(--yel);
   text-decoration: underline;
+  padding-right: 5px;
 }
+
+
 
 .explore .card a {
   display: none;
@@ -354,6 +377,11 @@ h2 {
   gap: 1rem;
 }
 
+.blog .card li:hover {
+  box-shadow: -3px -3px 5px rgba(0, 0, 0, 0.5);
+  transform: scale(0.98);
+}
+
 .blog img {
   width: calc(45% - 2rem);
   object-fit: cover;
@@ -387,18 +415,11 @@ h2 {
   color: var(--yel);
 }
 
-.blog .desc span:nth-of-type(1) {
+.blog .desc span:nth-of-type(1):hover {
   text-decoration: underline;
 }
 
-.blog .desc p {
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  -webkit-line-clamp: 2;
-  max-height: 3em;
-}
+
 
 .blog .desc strong {
   font-weight: 600;
@@ -406,6 +427,10 @@ h2 {
 
 .blog .desc a {
   color: var(--yel);
+}
+
+.blog .desc a:hover {
+  text-decoration: underline;
 }
 
 .blog .pg2 {
@@ -446,12 +471,25 @@ h2 {
 }
 
 .post li {
+  border-radius: 1rem;
   display: flex;
+}
+
+.post li:hover {
+  background-color: var(--yel);
+}
+
+.post li:hover span,
+.post li:hover h4 {
+  color: white;
 }
 
 .post li div {
   padding: 1rem 1rem 0.5rem 0;
   order: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .post div strong {
@@ -503,6 +541,12 @@ h2 {
   border-radius: 10px;
   border: none;
   outline: none;
+}
+
+.today button:hover {
+  color: white;
+  background-color: var(--yel);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
 .tags a {
@@ -826,6 +870,22 @@ footer .outside a:hover {
     padding: 0 1rem 0 1rem;
   }
 
+  .explore .card .info strong:first-of-type,
+  .explore .card .info p:first-of-type {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 1;
+    max-height: 1em;
+  }
+
+  .explore .card .info p {
+    margin-bottom: 0.5rem;
+  }
+
+
+
   .latestBlog .blog {
     width: 100%;
   }
@@ -834,8 +894,21 @@ footer .outside a:hover {
     display: none;
   }
 
+  .blog .desc p {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    max-height: 3em;
+  }
+
   .watchVideo p {
     padding: 0 5rem 0 5rem;
+  }
+
+  footer {
+    font-size: 1rem;
   }
 }
 
